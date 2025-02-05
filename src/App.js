@@ -20,7 +20,7 @@ const App = () => {
     }
 
     try {
-      const response = await fetch('https://flask-backend-3-ff3g.onrender.com/shorten', {
+      const response = await fetch('https://flask-backend-4-9fz4.onrender.com/shorten', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ const App = () => {
     }
   
     try {
-      const response = await fetch(`https://flask-backend-3-ff3g.onrender.com/update/${shortenedUrl.split('/')[1]}`, {
+      const response = await fetch(`https://flask-backend-4-9fz4.onrender.com/update/${shortenedUrl.split('/')[1]}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ const App = () => {
 
   // Copy to clipboard function
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(`https://flask-backend-3-ff3g.onrender.com${shortenedUrl}`);
+    navigator.clipboard.writeText(`https://flask-backend-4-9fz4.onrender.com${shortenedUrl}`);
    
   };
 
