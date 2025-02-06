@@ -20,7 +20,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await fetch('https://flask-backend-1-yhfi.onrender.com/stats');  // Update the URL if needed
+        const response = await fetch('https://flask-backend-z6sp.onrender.com/stats');  // Update the URL if needed
         const data = await response.json();
 
         // Set the data in the state
@@ -43,7 +43,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchDailyStats = async () => {
       try {
-        const response = await fetch('https://flask-backend-1-yhfi.onrender.com/stats/daily');  // Update URL if needed
+        const response = await fetch('https://flask-backend-z6sp.onrender.com/stats/daily');  // Update URL if needed
         const data = await response.json();
   
         // If data is fetched successfully, process it for the chart
