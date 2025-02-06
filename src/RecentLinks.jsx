@@ -13,7 +13,7 @@ const RecentLinks = () => {
   useEffect(() => {
     const fetchLinks = async () => {
       try {
-        const response = await fetch('https://flask-backend-z6sp.onrender.com/all');
+        const response = await fetch('https://flask-backend-2-ktp2.onrender.com/all');
         const data = await response.json();
         setLinks(data);
         setLoading(false);
@@ -53,7 +53,7 @@ const RecentLinks = () => {
       
   
       // Make the API request to update the URL
-      const response = await fetch(`https://flask-backend-z6sp.onrender.com/update1${shortUrl}`, {
+      const response = await fetch(`https://flask-backend-2-ktp2.onrender.com/update1${shortUrl}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -99,17 +99,17 @@ const RecentLinks = () => {
                 <div className="flex-grow-1">
                   <div className="mb-2 d-block">
                   <a
-  href={`https://flask-backend-z6sp.onrender.com${link.short_url}`}
+  href={`https://flask-backend-2-ktp2.onrender.com${link.short_url}`}
   target="_blank"
   rel="nofollow"
   className="align-middle"
 >
-  <strong className="text-break">{`https://flask-backend-z6sp.onrender.com${link.short_url}`}</strong>
+  <strong className="text-break">{`https://flask-backend-2-ktp2.onrender.com${link.short_url}`}</strong>
 </a>
 
                   </div>
                   {/* Button to Copy URL */}
-                  <CopyToClipboard text={`https://flask-backend-z6sp.onrender.com${link.short_url}`}>
+                  <CopyToClipboard text={`https://flask-backend-2-ktp2.onrender.com${link.short_url}`}>
                     <button className="btn btn-primary">
                       <small>Sao chép</small>
                     </button>
@@ -152,7 +152,7 @@ const RecentLinks = () => {
           <InputGroup className="mb-3">
             <InputGroup.Text>Link rút gọn</InputGroup.Text>
             <FormControl
-              value={`https://flask-backend-z6sp.onrender.com${editLink}`}
+              value={`https://flask-backend-2-ktp2.onrender.com${editLink}`}
               readOnly
             />
           </InputGroup>
